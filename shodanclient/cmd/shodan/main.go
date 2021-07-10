@@ -11,7 +11,6 @@ import (
 )
 
 func main() {
-	// I plan to phase this out and use a more interactive client. In progress.
 	//if len(os.Args) != 2 {
 	//	log.Fatalln("Usage: shodan searchterm")
 	//}
@@ -19,7 +18,7 @@ func main() {
 
 	// Declare variables.
 	// It wasn't collecting from the env correctly. So I hardcoded it for the moment.
-	apiKey := "qDiicrTBa6Dykf2gXYEe57WaMyTTa7Oi"
+	apiKey := <API_Key>
 	prompt := "shodan client> "
 	reader := bufio.NewReader(os.Stdin)
 	s := shodan.New(apiKey)
